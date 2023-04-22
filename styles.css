@@ -57,7 +57,14 @@ input[type=button] {
 
 .allTopButtons {
   display: flex;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 30%;
 }
+
+.TopTXTbuttons {
+ align-content: right;
+} 
 
 .SignInHome {
   background: #000000;
@@ -134,7 +141,7 @@ input[type=button] {
 }
 
 .allTopButtons {
-  padding-left: 500px;
+  padding-left: 90%;
 }
 
 .bg {
@@ -142,8 +149,8 @@ input[type=button] {
 }
 
 .slider {
-  width: 1000px;
-  height: 600px;
+  width: 50%;
+  height: 50%;
   background-color: yellow;
   margin-left: auto;
   margin-right: auto;
@@ -152,9 +159,9 @@ input[type=button] {
   overflow: hidden;
 }
 .image-container {
-  width: 4000px;
+  width: 200%;
   background-color: pink;
-  height: 600px;
+  height: 50%;
   clear: both;
   position: relative;
   -webkit-transition: left 1s;
@@ -172,13 +179,13 @@ input[type=button] {
   left: 0px;
 }
 #slide-2:target ~ .image-container {
-  left: -1000px;
+  left: -100%;
 }
 #slide-3:target ~ .image-container {
-  left: -2000px;
+  left: -200%;
 }
 #slide-4:target ~ .image-container {
-  left: -3000px;
+  left: -300%;
 }
 .buttons {
   position: relative;
