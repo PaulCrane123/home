@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Paul Crane's Home</title>
 </head>
-<body class="bg">
+<body class="bg" onload='redirect_Page(this)'>
     <div class="allTopButtons">
         <div class="TopTXTbuttons">
             <button class="HomeButton" onclick="window.location.href='https://paulcrane123.github.io/site/home';">Home</button>
@@ -17,7 +17,7 @@
         </div>
         <div class="InUpButtons">
             <button class="SignInHome" onclick="window.location.href='https://paulcrane123.github.io/site';">Sign In</button>
-            <button class="SignUpHome" onclick="window.location.href='https://paulcrane123.github.io/site';">Sign Up</button>
+            <button class="SignUpHome" onload="redirect_Page" onclick="window.location.href='https://paulcrane123.github.io/site';">Sign Up</button>
         </div>
     </div>
     <div class="slider">
@@ -26,10 +26,10 @@
         <span id="slide-3"></span>
         <span id="slide-4"></span>
         <div class="image-container">
-          <img src="https://i.ibb.co/qdwSPp0/imposter-GUS.jpg" class="slide" width="1000" height="600" />
-          <img src="https://i.ibb.co/QXBsChD/thumbs-up-emoji.jpg" class="slide" width="1000" height="600" />
-          <img src="https://i.ibb.co/F69DFfc/Ur-Such-ASussy-Baka.jpg" class="slide" width="1000" height="600" />
-          <img src="https://i.ibb.co/By8q8zQ/hankBB.jpg" class="slide" width="1000" height="600" />
+          <img src="https://i.ibb.co/qdwSPp0/imposter-GUS.jpg" class="slide" width="25%" height="100%" />
+          <img src="https://i.ibb.co/QXBsChD/thumbs-up-emoji.jpg" class="slide" width="25%" height="100%" />
+          <img src="https://i.ibb.co/F69DFfc/Ur-Such-ASussy-Baka.jpg" class="slide" width="25%" height="100%" />
+          <img src="https://i.ibb.co/By8q8zQ/hankBB.jpg" class="slide" width="25%" height="100%" />
         </div>
         <div class="buttons">
           <a href="#slide-1"></a>
@@ -37,6 +37,44 @@
           <a href="#slide-3"></a>
           <a href="#slide-4"></a>
         </div>
-      </div>
+      </div>      
+    <input type='button' 
+        onclick='redirect_Page(this)' value='Redirect Page'>
+      <p id='msg'></p>
+  </body>
+  <script>
+      // Using ES6 feature.
+      
+      let redirect_Page = (ele) => {
+           ele.disabled = true;
+          let iCnt = 12;	// for time in seconds.
+          
+          let iTimerId = setInterval(function () {
+        document.getElementById ('msg').innerHTML = 'redirecting in ' + iCnt + ' seconds';
+              
+              iCnt--;     // decrease counter by 1.
+              if (iCnt === 9) {
+                  // now, redirect page.
+                  window.location.href = 'https://paulcrane123.github.io/home/#slide-1';
+              }
+
+              if (iCnt === 6) {
+                  // now, redirect page.
+                  window.location.href = 'https://paulcrane123.github.io/home/#slide-2';
+              }
+
+              if (iCnt === 3) {
+                  // now, redirect page.
+                  window.location.href = 'https://paulcrane123.github.io/home/#slide-3';
+              }
+              
+              if (iCnt === 0) {
+                  // now, redirect page.
+                  window.location.href = 'https://paulcrane123.github.io/home/#slide-4';
+                  clearInterval(iTimerId);		// clear time interval.
+              }
+          }, 1000);
+      }
+  </script>
 <script src="./scripts.js" type="module" defer></script>
 </html>
