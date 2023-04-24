@@ -38,8 +38,6 @@
           <a href="#slide-4"></a>
         </div>
       </div>      
-    <input type='button' 
-        onclick='redirect_Page(this)' value='Redirect Page'>
       <p id='msg'></p>
   </body>
   <script>
@@ -72,7 +70,7 @@
                   // now, redirect page.
                   window.location.href = 'https://paulcrane123.github.io/home/#slide-4';
                   clearInterval(iTimerId);		// clear time interval.
-                  redirect_Page()
+                  redirect_Page(this);
               }
           }, 1000);
       }
