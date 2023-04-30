@@ -46,22 +46,22 @@ function checkInfo() {
  document.getElementById ('msg').innerHTML = 'redirecting in ' + iCnt + ' seconds';
        
        iCnt--;     // decrease counter by 1.
-       if (iCnt === 999) {
+       if (iCnt === 9) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-1';
        }
 
-       if (iCnt === 69) {
+       if (iCnt === 6) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-2';
        }
 
-       if (iCnt === 39) {
+       if (iCnt === 3) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-3';
        }
        
-       if (iCnt === 90) {
+       if (iCnt === 0) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-4';
            clearInterval(iTimerId);		// clear time interval.
