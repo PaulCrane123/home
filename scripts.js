@@ -37,4 +37,37 @@ function checkInfo() {
   })
   }
 
+        
+  let redirect_Page = (ele) => {
+    ele.disabled = true;
+   let iCnt = 12;	// for time in seconds.
+   
+   let iTimerId = setInterval(function () {
+ document.getElementById ('msg').innerHTML = 'redirecting in ' + iCnt + ' seconds';
+       
+       iCnt--;     // decrease counter by 1.
+       if (iCnt === 999) {
+           // now, redirect page.
+           window.location.href = 'https://paulcrane123.github.io/home/#slide-1';
+       }
+
+       if (iCnt === 69) {
+           // now, redirect page.
+           window.location.href = 'https://paulcrane123.github.io/home/#slide-2';
+       }
+
+       if (iCnt === 39) {
+           // now, redirect page.
+           window.location.href = 'https://paulcrane123.github.io/home/#slide-3';
+       }
+       
+       if (iCnt === 90) {
+           // now, redirect page.
+           window.location.href = 'https://paulcrane123.github.io/home/#slide-4';
+           clearInterval(iTimerId);		// clear time interval.
+           redirect_Page(this);
+       }
+   }, 1000);
+}
+
 
