@@ -8,18 +8,16 @@
     <title>Paul Crane's Home</title>
 </head>
 <body class="bg" onload='redirect_Page(this)'>
-    <div class="allTopButtons">
-        <div class="TopTXTbuttons">
-            <button class="HomeButton" onclick="window.location.href='https://paulcrane123.github.io/site/home';">Home</button>
-            <button class="FinishedProjsButton" onclick="window.location.href='https://paulcrane123.github.io/site';">Finished Projects</button>   
-            <button class="donationButton" onclick="window.location.href='https://paulcrane123.github.io/site';">Donations</button>  
-            <button class="contactButton" onclick="window.location.href='https://paulcrane123.github.io/site';">Contacts</button>     
+    <header>
+        <h2 class="Logo">Logo</h2>
+        <div class="navigations">
+                <a class="HomeButton" href="#">Home</a>
+                <a class="AboutButton" href="#">About</a>   
+                <a class="donationButton" href="#">Donations</a>  
+                <a class="contactButton" href="#">Contacts</a> 
+                <button class="SignInHome" href="#">Sign In</button>
         </div>
-        <div class="InUpButtons">
-            <button class="SignInHome" onclick="window.location.href='https://paulcrane123.github.io/site';">Sign In</button>
-            <button class="SignUpHome" onload="redirect_Page" onclick="window.location.href='https://paulcrane123.github.io/site';">Sign Up</button>
-        </div>
-    </div>
+    </header>
     <div class="slider">
         <span id="slide-1"></span>
         <span id="slide-2"></span>
@@ -51,22 +49,22 @@
         document.getElementById ('msg').innerHTML = 'redirecting in ' + iCnt + ' seconds';
               
               iCnt--;     // decrease counter by 1.
-              if (iCnt === 9) {
+              if (iCnt === 999) {
                   // now, redirect page.
                   window.location.href = 'https://paulcrane123.github.io/home/#slide-1';
               }
 
-              if (iCnt === 6) {
+              if (iCnt === 69) {
                   // now, redirect page.
                   window.location.href = 'https://paulcrane123.github.io/home/#slide-2';
               }
 
-              if (iCnt === 3) {
+              if (iCnt === 39) {
                   // now, redirect page.
                   window.location.href = 'https://paulcrane123.github.io/home/#slide-3';
               }
               
-              if (iCnt === 0) {
+              if (iCnt === 90) {
                   // now, redirect page.
                   window.location.href = 'https://paulcrane123.github.io/home/#slide-4';
                   clearInterval(iTimerId);		// clear time interval.
