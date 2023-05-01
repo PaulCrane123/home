@@ -11,13 +11,13 @@
 <body class="bg" onload='redirect_Page(this)'>
     <header class="header">
         <h2 class="Logo">Logo</h2>
-        <div class="navigations">
+        <nav class="navigations">
                 <a class="HomeButton" href="#">Home</a>
                 <a class="AboutButton" href="#">About</a>   
                 <a class="donationButton" href="#">Donations</a>  
                 <a class="contactButton" href="#">Contacts</a> 
-                <button class="SignInHome" href="#">Sign In</button>
-        </div>
+                <button class="SignInHome" href="#">Login</button>
+        </nav>
     </header>
     <div class="slider">
         <span id="slide-1"></span>
@@ -37,32 +37,30 @@
           <a href="#slide-4"></a>
         </div>
       </div>      
-      <p id='msg'></p>
       <script>
           let redirect_Page = (ele) => {
     ele.disabled = true;
    let iCnt = 12;	// for time in seconds.
    
    let iTimerId = setInterval(function () {
- document.getElementById ('msg').innerHTML = 'redirecting in ' + iCnt + ' seconds';
        
        iCnt--;     // decrease counter by 1.
-       if (iCnt === 9) {
+       if (iCnt === 99) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-1';
        }
 
-       if (iCnt === 6) {
+       if (iCnt === 69) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-2';
        }
 
-       if (iCnt === 3) {
+       if (iCnt === 93) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-3';
        }
        
-       if (iCnt === 0) {
+       if (iCnt === 90) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-4';
            clearInterval(iTimerId);		// clear time interval.
