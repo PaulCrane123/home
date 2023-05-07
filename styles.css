@@ -1,3 +1,8 @@
+body {
+  font-family: Ebrima;
+  font-weight: bold;
+}
+
 .navigations .SignInHome {
   background: transparent;
   color: white;
@@ -82,6 +87,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  background: darkslategrey;
 }
 
 .logo {
@@ -118,7 +124,7 @@
 }
 
 .bg {
-  background: linear-gradient(275deg, #324A69, #57738B);
+  background: darkslategrey;
   max-width: 960px;
 }
 
@@ -172,4 +178,54 @@
   width: 15px;
   border-radius: 50px;
   background-color: black;
+}
+
+ footer {
+  background:	black;
+  color: white;
+  bottom: 0;
+  font-size: 16px;
+  width: 100vw;
+  padding: 5%;
+ }
+
+ footer * {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  align-items: left;
+ }
+
+ .moreAbout {
+  width: 35%;
+}
+
+.buyStuff {
+  width: 25%;
+}
+
+.newsletter {
+  width: 35%;
+
+}
+
+.newsLbutton {
+  height: 3vw;
+  width: 20vw;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 8px;
+}
+
+.big {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sub {
+  background: green;
+  width: 100px;
+  height: 3vw;
+  border-radius: 5px;
+  font-size: 16px;
 }

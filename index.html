@@ -45,22 +45,22 @@
    let iTimerId = setInterval(function () {
        
        iCnt--;     // decrease counter by 1.
-       if (iCnt === 9) {
+       if (iCnt === 99) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-1';
        }
 
-       if (iCnt === 6) {
+       if (iCnt === 96) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-2';
        }
 
-       if (iCnt === 3) {
+       if (iCnt === 93) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-3';
        }
        
-       if (iCnt === 0) {
+       if (iCnt === 90) {
            // now, redirect page.
            window.location.href = 'https://paulcrane123.github.io/home/#slide-4';
            clearInterval(iTimerId);		// clear time interval.
@@ -70,6 +70,48 @@
 }
 
       </script>
+      <footer style="display: flex;">
+        <div class="moreAbout">
+            <div class="big">
+            More About Us 
+            </div>
+            <br>
+            <br>
+            <br>
+            We are not the imposter among us, but are you?
+            <br>
+            If you are the imposter make an account and sign up for our Newsletter.
+            <br>
+            I put the new forgis on the Jeep.
+            <br>
+            I have no idea what else about us is intresting.
+        </div>
+        <div class="buyStuff">
+            <div class="big">
+            Buy Stuff So I Get Money
+            </div>
+            <br>
+            <br>
+            <br>
+            <a>Product Link 1</a>
+            <br>
+            <br>
+            <a>Product Link 2</a>
+            <br>
+            <br>
+            <a>Product Link 3</a>
+        </div>
+        <div class="newsletter">
+            <div class="big">
+            Newsletter
+            <br>
+            <br>
+            <br>
+            <input type="text" class="newsLbutton" placeholder="Your Email Here">
+            <button class="sub">Subscribe</button>
+            </div>
+        </div>
+      </footer>
   </body>
 <script src="./scripts.js" type="module" defer></script>
 </html>
